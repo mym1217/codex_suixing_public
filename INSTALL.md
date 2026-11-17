@@ -1,6 +1,6 @@
 # Codex 随行完整使用说明
 
-适用发行版：**1.4.10**。说明更新：2026-11-10。
+适用发行版：**1.4.11**。说明更新：2026-11-10。
 
 Codex 随行让 Android 手机查看电脑会话、发送任务和接收提醒，实际工作由 Windows 电脑上的 Codex 执行。手机无需登录 ChatGPT；电脑必须开机、联网，并保持桌面 Codex 和连接程序运行。
 
@@ -37,8 +37,8 @@ Codex 随行让 Android 手机查看电脑会话、发送任务和接收提醒�
 
 在 [GitHub Releases](https://github.com/zhuanche1-boop/codex_suixing_public/releases) 选择同一个发行版本，下载：
 
-- `Codex-Suixing-1.4.10.apk`：手机 App。
-- `Codex-Suixing-1.4.10-Windows-x64.zip`：电脑连接程序。
+- `Codex-Suixing-1.4.11.apk`：手机 App。
+- `Codex-Suixing-1.4.11-Windows-x64.zip`：电脑连接程序。
 - `SHA256SUMS.txt`：下载文件的 SHA-256 校验值。
 
 GitHub 自动生成的 **Source code** 压缩包只有公开说明与许可，不是可安装程序。本项目不公开业务源码，也不是 OpenAI 官方产品。
@@ -46,8 +46,8 @@ GitHub 自动生成的 **Source code** 压缩包只有公开说明与许可，�
 需要核对下载是否完整时，在下载目录打开 PowerShell，运行以下命令，将结果与同一版本的 `SHA256SUMS.txt` 对照：
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Codex-Suixing-1.4.10.apk'
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Codex-Suixing-1.4.10-Windows-x64.zip'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Codex-Suixing-1.4.11.apk'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Codex-Suixing-1.4.11-Windows-x64.zip'
 ```
 
 <a id="tailscale"></a>
@@ -293,7 +293,7 @@ Set-Location -LiteralPath 'D:\Codex-Suixing'
 <a id="versions"></a>
 ## 13. 版本说明
 
-本发行版 1.4.10 使用 Android 1.4.10，桌面接口实现版本为 `1.4.6`。电脑启动提示中的 `1.4.6` 不等同于安装包发行版本；包内 `release.json` 记录发行版本。Windows 字节码依赖随包固定的 Node `22.23.4 x64`，不要自行替换运行时。
+本发行版 1.4.11 使用 Android 1.4.11，桌面接口实现版本为 `1.4.6`。电脑启动提示中的 `1.4.6` 不等同于安装包发行版本；包内 `release.json` 记录发行版本。Windows 字节码依赖随包固定的 Node `22.23.4 x64`，不要自行替换运行时。
 
 - **1.4.8**：提供额度圆环和详情、手动刷新；不要把下列 1.4.9 新增行为当成此版本能力。
 - **1.4.9**：新增前台额度自动刷新（约 60 秒检查、回到前台时按缓存状态更新、任务结束后合并刷新），失败时保留旧数据并降低重试频率；后台不新增额度查询。会话列表可显示电脑接口提供的未读标记，缺少标记的数据不据此推断为已读。
@@ -301,3 +301,9 @@ Set-Location -LiteralPath 'D:\Codex-Suixing'
 已有安装包内的说明可能早于这次文档补充；请以 [公开仓库中的完整使用说明](https://github.com/zhuanche1-boop/codex_suixing_public/blob/main/INSTALL.md) 为准，并核对本文适用版本。新发行包会随包带入更新后的说明。
 
 - **1.4.10**：电脑连接程序后台运行，启动窗口关闭后继续连接；新增 Stop.cmd 和 Status.cmd，统一电脑显示版本。未新增手机后台轮询。
+
+## 1.4.11 Windows 可视化客户端
+
+完整解压后双击 Codex-Suixing.exe，打开连接中心。已有配对可直接点“启动连接”；首次安装点“连接设置”，填写电脑 Tailscale IPv4 和本机 Codex 对话 ID（可由桌面 Codex 协助）。已有配置留空时沿用；保存设置会停止旧连接，保存后再启动。
+
+“手机扫码配对”在本机浏览器显示二维码；它包含凭据，只让自己的手机扫描。“查看日志”打开本地日志；“使用说明”打开本手册。关闭客户端窗口后后台继续运行；停止请点“停止连接”。最小化或关闭窗口后不再检查状态，电脑重启后需再次启动。不自动设置开机启动。

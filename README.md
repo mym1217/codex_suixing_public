@@ -10,8 +10,8 @@ Your computer works. You stay connected.
 
 前往 [Releases](https://github.com/zhuanche1-boop/codex_suixing_public/releases) 下载同一发行版本的：
 
-- `Codex-Suixing-1.4.10.apk`：Android App。
-- `Codex-Suixing-1.4.10-Windows-x64.zip`：电脑连接程序。
+- `Codex-Suixing-1.4.11.apk`：Android App。
+- `Codex-Suixing-1.4.11-Windows-x64.zip`：电脑连接程序。
 - `SHA256SUMS.txt`：文件校验值。
 
 GitHub 自动生成的 Source code 压缩包只包含这个公开仓库中的说明和许可，不是 App 源码或安装包。
@@ -46,6 +46,8 @@ GitHub 自动生成的 Source code 压缩包只包含这个公开仓库中的说
 
 电脑连接程序支持后台运行：Start.cmd 启动，Stop.cmd 停止，Status.cmd 查看状态。关闭启动窗口不影响连接；电脑重启后需要重新启动。
 
-当前发行：**1.4.10**。Start.cmd 后台启动，Stop.cmd 停止，Status.cmd 查看状态。
+电脑端双击 Codex-Suixing.exe 打开可视化连接中心，可启动/停止、查看状态、设置连接、显示配对二维码和打开日志。关闭客户端窗口后已启动的连接仍在后台运行。
+
+当前发行：**1.4.11**。双击 Codex-Suixing.exe 打开可视化连接中心。
 
 [历史版本](VERSIONS.md) · [逐版变化](CHANGELOG.md)

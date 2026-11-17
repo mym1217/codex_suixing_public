@@ -1,5 +1,10 @@
 # 版本变更记录
 
+## [1.4.11](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.11)
+
+- 新增 Windows 原生客户端，集中提供启动、停止、状态、设置、配对二维码、日志和说明入口。
+- 关闭窗口后后台继续，最小化暂停状态刷新；未新增手机后台轮询。
+
 ## [1.4.10](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.10)
 
 - 电脑程序后台运行，关闭CMD窗口后保持连接；新增启动、停止、状态入口及重复启动保护。
