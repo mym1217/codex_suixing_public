@@ -10,8 +10,8 @@ Your computer works. You stay connected.
 
 前往 [Releases](https://github.com/zhuanche1-boop/codex_suixing_public/releases) 下载同一发行版本的：
 
-- `Codex-Suixing-1.4.9.apk`：Android App。
-- `Codex-Suixing-1.4.9-Windows-x64.zip`：电脑连接程序。
+- `Codex-Suixing-1.4.10.apk`：Android App。
+- `Codex-Suixing-1.4.10-Windows-x64.zip`：电脑连接程序。
 - `SHA256SUMS.txt`：文件校验值。
 
 GitHub 自动生成的 Source code 压缩包只包含这个公开仓库中的说明和许可，不是 App 源码或安装包。
@@ -44,12 +44,8 @@ GitHub 自动生成的 Source code 压缩包只包含这个公开仓库中的说
 
 电脑程序以字节码分发，不直接包含业务源文件，但不能保证无法逆向分析。第三方运行时的代码和许可独立保留。
 
-## 版本记录
+电脑连接程序支持后台运行：Start.cmd 启动，Stop.cmd 停止，Status.cmd 查看状态。关闭启动窗口不影响连接；电脑重启后需要重新启动。
 
-[所有历史版本](https://github.com/zhuanche1-boop/codex_suixing_public/blob/main/VERSIONS.md) · [每版新增与修复](https://github.com/zhuanche1-boop/codex_suixing_public/blob/main/CHANGELOG.md)
+当前发行：**1.4.10**。Start.cmd 后台启动，Stop.cmd 停止，Status.cmd 查看状态。
 
-## 历史归档
-
-[版本清单](VERSIONS.md) · [逐版变化](CHANGELOG.md)
-
-每个版本对应同名 v 标签。2026-11-10 补录的提交用于还原留存快照，提交日期不冒充原始开发日期。 这里只保存公开说明，安装包在 Releases。
+[历史版本](VERSIONS.md) · [逐版变化](CHANGELOG.md)

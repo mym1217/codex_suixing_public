@@ -1,5 +1,10 @@
 # 版本变更记录
 
+## [1.4.10](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.10)
+
+- 电脑程序后台运行，关闭CMD窗口后保持连接；新增启动、停止、状态入口及重复启动保护。
+- 轮换凭证前停止后台，统一两端显示版本；未新增手机后台轮询。
+
 这里只记录各版新增、修改和修复。历史版本于 2026-11-10 补录，不倒填提交或发布日期；无法确认的增量会明确标注。
 
 ## [1.4.9](https://github.com/zhuanche1-boop/codex_suixing_public/releases/tag/v1.4.9)
