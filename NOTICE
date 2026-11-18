@@ -9,3 +9,5 @@ No commercial license is granted. See LICENSE for the exact terms.
 Third-party software and services remain subject to their own licenses
 and terms. Redistributed runtime components include their license notices.
 OpenAI desktop components and account credentials are not bundled.
+
+Android offline formula reader includes KaTeX 0.19.1 (MIT), copyright Khan Academy and other contributors. See third_party/katex-LICENSE and APK assets/katex-LICENSE.

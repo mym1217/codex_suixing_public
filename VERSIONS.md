@@ -1,9 +1,10 @@
 # 版本下载与归档
 
-日常使用建议选择 [最新版本 1.4.11](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.11)。安装前阅读该版本的使用说明；电脑和手机应使用对应版本。历史版本的接口兼容性以各版说明为准。
+日常使用建议选择 [最新版本 1.4.12](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.12)。安装前阅读该版本的使用说明；电脑和手机应使用对应版本。历史版本的接口兼容性以各版说明为准。
 
 | 版本 | 手机内部版本 / code | 电脑包 | 源码留存状态 |
 | --- | --- | --- | --- |
+| [1.4.12](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.12) | 1.4.12 / 19 | Windows x64 | 完整快照（私有） |
 | [1.4.11](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.11) | 1.4.11 / 18 | Windows x64 | 完整快照（私有） |
 | [1.4.10](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.10) | 1.4.10 / 17 | Windows x64 | 完整快照（私有） |
 | [1.4.9](https://github.com/zhuanche1-boop/codex_suixing_public/releases/tag/v1.4.9) | 1.4.9 / 16 | Windows x64 | 完整快照（私有） |
@@ -24,7 +25,7 @@
 | [1.1.0](https://github.com/zhuanche1-boop/codex_suixing_public/releases/tag/v1.1.0) | 1.1.0 / 2 | Windows x64 | 完整快照（私有） |
 | [1.0.0](https://github.com/zhuanche1-boop/codex_suixing_public/releases/tag/v1.0.0) | 1.0.0 / 1 | Windows x64 | 完整快照（私有） |
 
-- 共 19 个构建记录、19 个原签名 APK、17 套 Windows 包。
+- 共 20 个构建记录、20 个原签名 APK、18 套 Windows 包。
 - 1.2.1、1.3.0 只有原 APK，不能作为完整的首次安装套件；在 Releases 标为预发行历史归档。
 - 1.4.5-details 是同一内部版本 1.4.5 / code 12 的另一历史构建，使用独立标签避免同名覆盖。
 - 1.4.7 依据原开发记录沿用 1.4.6 电脑模块；未找到完整 Android 源码，未拿其他版本冒充。

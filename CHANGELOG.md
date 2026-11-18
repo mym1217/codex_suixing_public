@@ -1,5 +1,10 @@
 # 版本变更记录
 
+## [1.4.12](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.12)
+
+- 适配桌面26.1111.2228.0模型切换，写入后回读确认。
+- 新增KaTeX离线公式排版阅读入口，按需打开单窗口，无新增后台查询。
+
 ## [1.4.11](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.11)
 
 - 新增 Windows 原生客户端，集中提供启动、停止、状态、设置、配对二维码、日志和说明入口。
