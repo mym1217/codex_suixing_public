@@ -10,8 +10,8 @@ Your computer works. You stay connected.
 
 前往 [Releases](https://github.com/zhuanche1-boop/codex_suixing_public/releases) 下载同一发行版本的：
 
-- `Codex-Suixing-1.4.12.apk`：Android App。
-- `Codex-Suixing-1.4.12-Windows-x64.zip`：电脑连接程序。
+- `Codex-Suixing-1.4.13.apk`：Android App。
+- `Codex-Suixing-1.4.13-Windows-x64.zip`：电脑连接程序。
 - `SHA256SUMS.txt`：文件校验值。
 
 GitHub 自动生成的 Source code 压缩包只包含这个公开仓库中的说明和许可，不是 App 源码或安装包。
@@ -50,6 +50,8 @@ GitHub 自动生成的 Source code 压缩包只包含这个公开仓库中的说
 
 1.4.12：适配新版桌面即时模型切换；含公式的回复可点开本地离线排版阅读。
 
-当前发行：**1.4.12**。双击 Codex-Suixing.exe 打开可视化连接中心。
+1.4.13 修复：Windows构建的嵌套资源路径已规范化，安卓能读取本地KaTeX脚本及字体；修复1.4.12公式窗口退回原文的问题。
+
+当前发行：**1.4.13**。双击 Codex-Suixing.exe 打开可视化连接中心。
 
 [历史版本](VERSIONS.md) · [逐版变化](CHANGELOG.md)

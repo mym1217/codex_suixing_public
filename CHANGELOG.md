@@ -1,5 +1,10 @@
 # 版本变更记录
 
+## [1.4.13](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.13)
+
+- 修复Windows打包时嵌套资产反斜杠导致KaTeX无法加载、公式回退原文的问题。
+- 签名前规范化Android资源路径，保留文件字节并检查重复或越界条目。
+
 ## [1.4.12](https://github.com/mym1217/codex_suixing_public/releases/tag/v1.4.12)
 
 - 适配桌面26.1111.2228.0模型切换，写入后回读确认。

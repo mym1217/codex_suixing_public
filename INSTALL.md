@@ -1,6 +1,6 @@
 # Codex 随行完整使用说明
 
-适用发行版：**1.4.12**。说明更新：2026-11-10。
+适用发行版：**1.4.13**。说明更新：2026-11-10。
 
 Codex 随行让 Android 手机查看电脑会话、发送任务和接收提醒，实际工作由 Windows 电脑上的 Codex 执行。手机无需登录 ChatGPT；电脑必须开机、联网，并保持桌面 Codex 和连接程序运行。
 
@@ -37,8 +37,8 @@ Codex 随行让 Android 手机查看电脑会话、发送任务和接收提醒�
 
 在 [GitHub Releases](https://github.com/zhuanche1-boop/codex_suixing_public/releases) 选择同一个发行版本，下载：
 
-- `Codex-Suixing-1.4.12.apk`：手机 App。
-- `Codex-Suixing-1.4.12-Windows-x64.zip`：电脑连接程序。
+- `Codex-Suixing-1.4.13.apk`：手机 App。
+- `Codex-Suixing-1.4.13-Windows-x64.zip`：电脑连接程序。
 - `SHA256SUMS.txt`：下载文件的 SHA-256 校验值。
 
 GitHub 自动生成的 **Source code** 压缩包只有公开说明与许可，不是可安装程序。本项目不公开业务源码，也不是 OpenAI 官方产品。
@@ -46,8 +46,8 @@ GitHub 自动生成的 **Source code** 压缩包只有公开说明与许可，�
 需要核对下载是否完整时，在下载目录打开 PowerShell，运行以下命令，将结果与同一版本的 `SHA256SUMS.txt` 对照：
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Codex-Suixing-1.4.12.apk'
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\Codex-Suixing-1.4.12-Windows-x64.zip'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Codex-Suixing-1.4.13.apk'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Codex-Suixing-1.4.13-Windows-x64.zip'
 ```
 
 <a id="tailscale"></a>
@@ -293,7 +293,7 @@ Set-Location -LiteralPath 'D:\Codex-Suixing'
 <a id="versions"></a>
 ## 13. 版本说明
 
-本发行版 1.4.12 使用 Android 1.4.12，桌面接口实现版本为 `1.4.6`。电脑启动提示中的 `1.4.6` 不等同于安装包发行版本；包内 `release.json` 记录发行版本。Windows 字节码依赖随包固定的 Node `22.23.4 x64`，不要自行替换运行时。
+本发行版 1.4.13 使用 Android 1.4.13，桌面接口实现版本为 `1.4.6`。电脑启动提示中的 `1.4.6` 不等同于安装包发行版本；包内 `release.json` 记录发行版本。Windows 字节码依赖随包固定的 Node `22.23.4 x64`，不要自行替换运行时。
 
 - **1.4.8**：提供额度圆环和详情、手动刷新；不要把下列 1.4.9 新增行为当成此版本能力。
 - **1.4.9**：新增前台额度自动刷新（约 60 秒检查、回到前台时按缓存状态更新、任务结束后合并刷新），失败时保留旧数据并降低重试频率；后台不新增额度查询。会话列表可显示电脑接口提供的未读标记，缺少标记的数据不据此推断为已读。
@@ -313,3 +313,4 @@ Set-Location -LiteralPath 'D:\Codex-Suixing'
 即时模型切换已核验桌面构建26.1103.4239.0及26.1111.2228.0。其他未验证版本会显示不支持；请更新对应电脑连接程序。若提示会话未加载，明确点击在电脑打开该会话后重试；不会在后台自动切换电脑页面。
 
 含公式的聊天消息下方提供“公式排版 · 离线阅读”。点开后使用本地KaTeX排版 $...$、$$...$$、\(...\)、\[...\]；代码块保持原文，不能解析的公式也保留原文。公式窗口支持长按选择与横向滚动宽公式，关闭或退到后台后释放。它不编译完整LaTeX文档，聊天主列表仍显示可复制原文。无CDN和新增后台查询。
+1.4.13 修复：Windows构建的嵌套资源路径已规范化，安卓能读取本地KaTeX脚本及字体；修复1.4.12公式窗口退回原文的问题。
